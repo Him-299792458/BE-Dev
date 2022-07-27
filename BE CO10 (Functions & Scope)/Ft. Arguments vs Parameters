@@ -1,0 +1,12 @@
+If the function has one or more parameters, we can pass values to these parameters using function arguments.
+--> Function parameters are the variable names listed in the function definition.
+--> Function arguments are the real values passed to(and received by) the function.
+
+//Code tab:
+function square(number){   //here, "number" is parameter.
+    return number*number;
+}
+console.log(square(2)); // here, "2" which is a function argument takes the place of "number" which is a function parameter.
+//End
+
+Example, We can pass the argument 2 to the sqaure function defined above using sqaure(2). This argument is received by the parameter named number in the function.

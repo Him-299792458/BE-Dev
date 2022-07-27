@@ -1,0 +1,42 @@
+/*
+Var is a type of identifier which was once used prevalently in JS but is now rendered outdated in the same JS
+due to a few bugs. There are two prominent bugs out of many(countable) which has caused this to happen.
+These two bugs are:
+1.) Global Scoping
+2.) Hoisting
+*/
+
+//1.) Global Scoping:
+
+/*'var' as an identifier type has a tendency to produce Global Scope Variables even though the variables are
+declared in a closed Local Scope.
+
+Example-->
+*/
+//Code Stab:
+function SayHello()
+{
+    {
+        //let a="Hello";  If we'd used 'let' instead of 'var', the code stab would've been a local scope.
+        var a="Hello";
+        console.log(a);
+    }
+    console.log(a); //This won't give an ERROR and will print the output, this is a glitch in 'var'.
+}
+//This bug resulted in the formation of the 'let' operator.
+// 'var' doesn't make variables of Global Scope by default Universally, this is a special case above.
+
+//2.) Hoisting in var(Hoisting of vbariables is a special case of JS, all thanks to 'var')
+/* Hoisting refers to the two cases of declaration of a variable after and before calling a function with the 
+variable as a perimeter. In 'var', if you call on a function before declaring a varibale then it will either return
+or print the output of the function and won't throw an ERROR like in the case of the 'let' operator.
+
+Example-->
+*/
+//Code Stab:
+console.log(a); //Will print an output: undefined, if the identifier is 'var' and not 'let'.
+
+//let a=5; This will cause this code stab to throw an ERROR at line 36 as the variable 'a' hasn't been declared.
+
+var a=5;
+console.log(a);

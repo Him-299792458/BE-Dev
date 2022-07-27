@@ -1,0 +1,10 @@
+//There are many In-Built functions in JS,example:
+console.log(); Math.pow(); Math.sqrt(); etc.
+/* These in-built functions work without us writing any code for it.
+The reason why they work? -->
+Due to 'abstraction', a term given to the functions which are encoded and do not require the user to code the 
+for the same function any line of codes, and thus can call onto these functions at their own disposal.
+*/
+
+//In software engineering and programming language theory, the abstraction principle is a basic dictum that aims to reduce duplication of information in a program whenever practical by making use of abstractions provided by the programming language or software libraries.
+//Abstraction is part of OOP.

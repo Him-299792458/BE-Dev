@@ -1,0 +1,18 @@
+1.)The code written in node JS is first converted to C++ which is interpreted by the compiler and then is converted further to Machine level language in order to be.
+Path:
+
+(NodeJS) --> (C++) --> (Compiler) --> (Machine Level Language) a.k.a language of the binary.
+
+2.)Meaning of the word(NodeJS): Node=Performing the task in the backend, JS=Using JavaScript. (Complete bakwaas hai yeh!)
+
+3.) Difference between "==" and "===":
+Both give the result when used for a mathematical operation but "==" will only fetch the required answer but won't give the result in the same datatype, whereas "===" will fetch the 
+same datatype as well.
+
+4.) Why don't we use var?
+-- var is a window object(allows global scoping) thus becomes available as a global data to any who wants to access it.
+Eg.
+var password="Guddu";
+//Terminal
+window.password --result= 'Guddu'... Here window is a function which conveys the value of a global scoping variable.
+
